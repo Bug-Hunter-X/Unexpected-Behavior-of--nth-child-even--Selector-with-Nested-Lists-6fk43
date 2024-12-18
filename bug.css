@@ -1,0 +1,9 @@
+The following CSS code snippet intends to style list items, but it produces unexpected results.  The `:nth-child(n)` selector is supposed to target every even-numbered list item, but it doesn't work as expected.
+
+```css
+li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+```
+
+The problem is that `:nth-child(even)` selects every other element in the list, regardless of whether it's a direct child of the `<ul>` or `<ol>` element.
