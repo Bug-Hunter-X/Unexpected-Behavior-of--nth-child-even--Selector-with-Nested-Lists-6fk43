@@ -1,0 +1,9 @@
+To correctly style every other direct child list item, use the `:nth-child(2n)` selector, making it clear that you are targeting every other element directly under the parent.
+
+```css
+li:nth-child(2n) {
+  background-color: #f0f0f0;
+}
+```
+
+This ensures that the styling applies consistently across the intended elements and prevents unexpected behavior stemming from selector ambiguity.
